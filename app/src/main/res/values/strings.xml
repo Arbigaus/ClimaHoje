@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Clima Hoje</string>
+    <string name="searchLabel">Cidade</string>
+    <string name="filename_cities">cities.txt</string>
+    <string name="insertButtonLabel">Inserir</string>
+    <string name="cityLabel">Cidade</string>
+    <string name="starImgDescription">star</string>
+    <string name="strNull">--</string>
+    <string name="strNullDegree">--°</string>
+</resources>

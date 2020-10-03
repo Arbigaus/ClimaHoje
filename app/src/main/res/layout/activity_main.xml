@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.MainActivity"
+    android:background="@android:color/secondary_text_dark_nodisable"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@null"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strNull"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/whiteText"
+                android:inputType="textCapCharacters"
+                android:gravity="center"
+                tools:ignore="TextViewEdits" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/degreeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/strNullDegree"
+            android:textStyle="normal"
+            android:textSize="100sp"
+            android:textAlignment="center"
+            android:textColor="@color/whiteText"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cityNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/whiteText"
+        android:text="@string/strNull"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="30dp"
+        tools:ignore="TextViewEdits" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/day_info_recycler_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
